@@ -1,7 +1,7 @@
 import puppeteer from 'puppeteer';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const convertHtmlToPdf = async (html: string, options: puppeteer.PDFOptions = {}, puppeteerArgs = {}) => {
+const convertHtmlToPdf = async (html: string, options: puppeteer.PDFOptions = {}, puppeteerArgs = {}): Promise<Buffer> => {
   let browser;
 
   if (puppeteerArgs) {

@@ -1,6 +1,6 @@
 import { DEFAULT_PORT } from '../helpers/constants';
 
-export default function normalizePort(val: string | undefined) {
+export default function normalizePort(val: string | undefined): number {
   if (!val) {
     return DEFAULT_PORT;
   }
